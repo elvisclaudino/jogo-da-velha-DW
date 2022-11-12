@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+
+
+.paginicial{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/Background/background.png)
+}
+
+
+
+.third {
+    border-color: #25eb3f;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px 120px #2be444 inset, 0 0 0 0 #24b938;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    height: 25vh;
+    width: 25vw;
+    margin-top: 1rem;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    border-radius:1%;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #1e992e inset, 0 0 10px 4px #2db63f;
+  }
+
+.titulo{
+    margin-top: 4rem;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body{
+  background: url(../img/Background/background.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+}

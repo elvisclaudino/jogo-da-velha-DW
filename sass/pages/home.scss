@@ -1,0 +1,117 @@
+.container__jogar {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container__jogar-photoAndName {
+  display: flex;
+  align-items: center;
+}
+
+.home__avatar {
+  border: 5px solid white;
+  border-radius: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 180px;
+  width: 180px;
+}
+
+.container__jogar-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 100px;
+
+  .name__user {
+    font-family: $font;
+    text-decoration: underline 5px;
+    color: white;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.295) 0.1em 0.1em 0.1em;
+  }
+
+  .name__logout {
+    font-family: $font;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 2px;
+    text-shadow: rgba(0, 0, 0, 0.295) 0.1em 0.1em 0.1em;
+  }
+}
+
+.link__button {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.button__style-home {
+  align-items: center;
+  background-color: $secondary-color;
+  border: 5px solid white;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  font-family: $font;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px 70px;
+  text-transform: uppercase;
+  justify-content: space-around;
+  transition: 0.5s;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:hover {
+    background-color: white;
+    border-color: $secondary-color;
+    color: $secondary-color;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container__jogar-name {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container__jogar {
+    flex-direction: column;
+  }
+  .container__jogar-photoAndName {
+    flex-direction: column;
+
+    .container__jogar-name {
+      margin: 0;
+    }
+  }
+  .home__avatar {
+    width: 150px;
+    height: 150px;
+  }
+  .container__jogar-buttons {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  background-image: url(/img/Background/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.game button {
+  width: 300px;
+  height: 250px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  background: #f7f7f7;
+}
+
+.cell {
+  width: 17vw;
+  height: 22vh;
+  background-color: rgb(250, 255, 255);
+  opacity: 1;
+  border: 2px solid rgb(0, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+  border-left: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: none;
+}
+
+.msgVitoria {
+  display: none;
+}
+
+/* @media (max-height: 540px) {
+  .game {
+    height: 10px;
+  }
+} */
+
+@media (max-width: 1440px) {
+  .cell {
+    width: 40px;
+    height: 40px;
+  }
+  .game button {
+    width: 170px;
+    height: 165px;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cell {
+    width: 10vh;
+  }
+  .game {
+    min-height: 100vh;
+  }
+
+  .game button {
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+  }
+
+  .cell:nth-child(1),
+  .cell:nth-child(2),
+  .cell:nth-child(3) {
+    margin-top: 5rem;
+  }
+
+  .cell:nth-child(7),
+  .cell:nth-child(8),
+  .cell:nth-child(9) {
+    margin-bottom: 5rem;
+  }
+
+  .currentPlayer {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .game button {
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+  }
+
+  .cell:nth-child(1),
+  .cell:nth-child(2),
+  .cell:nth-child(3) {
+    margin-top: 9rem;
+  }
+  .cell:nth-child(7),
+  .cell:nth-child(8),
+  .cell:nth-child(9) {
+    margin-bottom: 9rem;
+  }
+}

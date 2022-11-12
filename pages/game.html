@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon link -->
+    <link
+      rel="shortcut icon"
+      href="../img/icons/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Jogo da velha KOMBAT</title>
+  </head>
+  <body>
+    <section class="container__style">
+      <div class="container__box container__box-board">
+        <div class="container__box-players mt-5">
+          <div class="player__one">
+            <img
+              src="../img/Icons/icone__user.png"
+              class="player__one-avatar img-fluid"
+              alt="avatar"
+            />
+            <img
+              src="../img/life-bar/full-lifebar-playerone.png"
+              alt=""
+              class="player__one-life img-fluid"
+            />
+          </div>
+          <img
+            src="../img/Icons/game-versus-icon.png"
+            alt=""
+            class="versus__icon img-fluid"
+          />
+          <div class="player__two">
+            <img
+              src="../img/Icons/icone__user.png"
+              class="player__two-avatar img-fluid"
+              alt="avatar"
+            />
+            <img
+              src="../img/life-bar/full-lifebar-playertwo.png"
+              alt=""
+              class="player__two-life img-fluid"
+            />
+          </div>
+        </div>
+        <div class="board" data-board>
+          <div class="board__cell" data-cell></div>
+          <div class="board__cell" data-cell></div>
+          <div class="board__cell" data-cell></div>
+          <div class="board__cell" data-cell></div>
+          <div class="board__cell" data-cell></div>
+          <div class="board__cell" data-cell></div>
+          <div class="board__cell" data-cell></div>
+          <div class="board__cell" data-cell></div>
+          <div class="board__cell" data-cell></div>
+        </div>
+        <div class="container__box-footer">
+          <div class="box__footer-logo">
+            <img src="../img/logo.png" alt="" class="logo__footer img-fluid" />
+          </div>
+          <div class="box__footer-copy">
+            <a href="" class="paragraph__footer">PROJETO NO GIT</a>
+            <p class="paragraph__footer copy">
+              2022 &copy; Elvis Claudino, Gabriel Fasolim e Murilo Analiel
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="winning__message" data-winning-message>
+        <p data-winning-message-text>X Venceu!</p>
+        <button class="button__style-game" data-restart-button>
+          Reiniciar
+        </button>
+        <button class="button__style-game">Voltar ao menu</button>
+      </div>
+    </section>
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script game -->
+    <script src="../js/game.js"></script>
+  </body>
+</html>
