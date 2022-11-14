@@ -5,59 +5,6 @@
   justify-content: center;
 }
 
-.personal-image {
-  text-align: center;
-}
-
-.personal-image input[type="file"] {
-  display: none;
-}
-
-.personal-figure {
-  height: 150px;
-  margin: 0;
-  position: relative;
-  width: 150px;
-}
-
-.personal-avatar {
-  border: 5px solid white;
-  border-radius: 100%;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  cursor: pointer;
-  height: 150px;
-  transition: all ease-in-out 0.3s;
-  width: 150px;
-}
-
-.personal-avatar:hover {
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-}
-
-.personal-figcaption {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 100%;
-  cursor: pointer;
-  height: inherit;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  transition: all ease-in-out 0.3s;
-  width: inherit;
-}
-
-.personal-figcaption:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-}
-
-.personal-figcaption > img {
-  height: 50px;
-  margin-top: 50px;
-  width: 50px;
-}
-
 .container__box-userInfo {
   align-items: center;
   display: flex;
@@ -72,13 +19,6 @@
 .form__userInfo {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-}
-
-.photoAndInfo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .form__infos-input {
@@ -138,10 +78,6 @@
   }
 
   .container__box-userInfo {
-    flex-direction: column;
-  }
-
-  .photoAndInfo {
     flex-direction: column;
   }
 

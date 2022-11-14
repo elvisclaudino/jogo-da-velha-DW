@@ -88,59 +88,6 @@
   justify-content: center;
 }
 
-.personal-image {
-  text-align: center;
-}
-
-.personal-image input[type=file] {
-  display: none;
-}
-
-.personal-figure {
-  height: 150px;
-  margin: 0;
-  position: relative;
-  width: 150px;
-}
-
-.personal-avatar {
-  border: 5px solid white;
-  border-radius: 100%;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  cursor: pointer;
-  height: 150px;
-  transition: all ease-in-out 0.3s;
-  width: 150px;
-}
-
-.personal-avatar:hover {
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-}
-
-.personal-figcaption {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 100%;
-  cursor: pointer;
-  height: inherit;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  transition: all ease-in-out 0.3s;
-  width: inherit;
-}
-
-.personal-figcaption:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-}
-
-.personal-figcaption > img {
-  height: 50px;
-  margin-top: 50px;
-  width: 50px;
-}
-
 .container__box-userInfo {
   align-items: center;
   display: flex;
@@ -155,13 +102,6 @@
 .form__userInfo {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-}
-
-.photoAndInfo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .form__infos-input {
@@ -217,9 +157,6 @@
     font-weight: bold;
   }
   .container__box-userInfo {
-    flex-direction: column;
-  }
-  .photoAndInfo {
     flex-direction: column;
   }
   .form__userInfo {
@@ -306,13 +243,57 @@
   align-items: center;
 }
 
-.home__avatar {
+.personal-image {
+  text-align: center;
+}
+
+.personal-image input[type=file] {
+  display: none;
+}
+
+.personal-figure {
+  height: 150px;
+  margin: 0;
+  position: relative;
+  width: 150px;
+}
+
+.personal-avatar {
   border: 5px solid white;
   border-radius: 100%;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  height: 180px;
-  width: 180px;
+  cursor: pointer;
+  height: 150px;
+  transition: all ease-in-out 0.3s;
+  width: 150px;
+}
+
+.personal-avatar:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.personal-figcaption {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  cursor: pointer;
+  height: inherit;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: all ease-in-out 0.3s;
+  width: inherit;
+}
+
+.personal-figcaption:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.personal-figcaption > img {
+  height: 50px;
+  margin-top: 50px;
+  width: 50px;
 }
 
 .container__jogar-name {
@@ -647,6 +628,76 @@
   }
   .winning__message-show {
     display: flex;
+  }
+}
+.index__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.index__content .index__content--title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: #f7a301 0.1em 0.1em 0.1em;
+  text-transform: uppercase;
+}
+
+.button__style-index {
+  align-items: center;
+  background-color: #f7a301;
+  border: 5px solid white;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  height: 100px;
+  width: 400px;
+  justify-content: center;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px 120px #f7a301 inset, 0 0 0 0 #f7a301;
+  background-color: #5ffd5b;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.third:hover {
+  box-shadow: 0 0 10px 0 #f7a301 inset, 0 0 10px 4px #f7a301;
+  background-color: white;
+  border-color: #f7a301;
+  color: #f7a301;
+}
+
+.titulo {
+  margin-top: 4rem;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .index__content .index__content--title {
+    font-size: 1.5rem;
+    line-height: 10px;
+  }
+  .button__style-index {
+    height: 100px;
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .index__content .index__content--title {
+    font-size: 1.3rem;
+  }
+  .button__style-index {
+    height: 100px;
+    width: 250px;
   }
 }
 
