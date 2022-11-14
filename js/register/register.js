@@ -9,8 +9,6 @@ let button = form.submit.addEventListener("submit", (e) => {
   e.preventDefault();
   const login = "http://localhost:3033/users";
 
-  
-
   axios.post('http://localhost:3033/users', {
     username: form.username.value,
     password: form.password.value
