@@ -31,9 +31,11 @@
   font-size: 22px;
   font-weight: bold;
   margin-top: 2rem;
-  padding: 10px 60px;
+  height: 70px;
+  width: 300px;
   text-transform: uppercase;
   transition: 0.5s;
+  justify-content: center;
 
   &:hover {
     background-color: white;
@@ -72,7 +74,8 @@
 @media (max-width: 420px) {
   .button__style {
     font-size: 16px;
-    padding: 10px 50px;
+    height: 60px;
+    width: 250px;
   }
 }
 
@@ -82,7 +85,6 @@
   }
 
   .button__style {
-    font-size: 14px;
-    padding: 10px 30px;
+    width: 230px;
   }
 }

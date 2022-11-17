@@ -32,12 +32,13 @@
   background-color: $primary-color;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-}
-.third:hover {
-  box-shadow: 0 0 10px 0 $secondary-color inset, 0 0 10px 4px $secondary-color;
-  background-color: white;
-  border-color: $secondary-color;
-  color: $secondary-color;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $secondary-color inset, 0 0 10px 4px $secondary-color;
+    background-color: white;
+    border-color: $secondary-color;
+    color: $secondary-color;
+  }
 }
 
 .titulo {
