@@ -14,7 +14,7 @@ let button = form.submit.addEventListener("submit", (e) => {
     password: form.password.value
   })
   .then(function (response) {
-    console.log(response);
+    window.location.replace("/pages/login");
   })
   .catch(function (error) {
     console.log(error);

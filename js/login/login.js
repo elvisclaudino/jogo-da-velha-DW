@@ -12,7 +12,9 @@ let button = form.submit.addEventListener("submit", (e) => {
     password: form.password.value
   })
   .then(function (response) {
-    console.log(response);
+    if (response.status = 200) {
+      window.location.href = 'home.html'
+    }
   })
   .catch(function (error) {
     console.log(error);
