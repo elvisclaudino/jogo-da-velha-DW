@@ -52,7 +52,7 @@
               </label>
             </div>
             <div class="container__jogar-name">
-              <p class="name__user">Usuário</p>
+              <p class="name__user" id="username"></p>
               <a class="name__logout" href=""
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@
           </div>
 
           <div class="container__jogar-buttons">
-            <a href="./jogo.html" class="link__button">
+            <a href="game.html" class="link__button">
               <button type="submit" class="button__style-home">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@
                 Jogar
               </button>
             </a>
-            <a href="./perfil.html" class="link__button">
+            <a href="perfil.html" class="link__button">
               <button type="submit" class="button__style-home">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -133,5 +133,9 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.body.querySelector("#username").innerHTML = localStorage.getItem('username');
+      console.log(localStorage.getItem(username));
+    </script>
   </body>
 </html>

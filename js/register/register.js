@@ -14,10 +14,11 @@ let button = form.submit.addEventListener("submit", (e) => {
     password: form.password.value
   })
   .then(function (response) {
-    window.location.replace("/pages/login");
+    window.location.replace("login.html");
   })
   .catch(function (error) {
     console.log(error);
+    alert(error);
   });
   
 });
