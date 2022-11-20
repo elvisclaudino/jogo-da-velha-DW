@@ -701,5 +701,37 @@
     width: 250px;
   }
 }
+.logo__profile {
+  width: 200px;
+}
+
+.container__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name__user-profile {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline 5px;
+  color: white;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.295) 0.1em 0.1em 0.1em;
+}
+
+.container__jogar-infos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  margin-top: 10px;
+}
+
+.button__style-profile {
+  font-size: 16px;
+  padding: 18px 50px;
+}
 
 /*# sourceMappingURL=style.css.map */
