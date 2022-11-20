@@ -65,3 +65,9 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 300px) {
+  .copy {
+    font-size: 8px;
+  }
+}
