@@ -53,7 +53,6 @@ const endGame = (isDraw) => {
       });
     }
   }
-
   winningMessage.classList.add("winning__message-show");
 };
 

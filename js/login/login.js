@@ -13,8 +13,10 @@ let button = form.submit.addEventListener("submit", (e) => {
   })
   .then(function (response) {
     if (response.status = 200) {
-      const {username} = response.data.data;
+      const {username,wins,defeats} = response.data.data;
       localStorage.setItem('username', username);
+      localStorage.setItem('wins', wins);
+      localStorage.setItem('defeats', defeats);
       window.location.href = 'home.html'
     }
     else{
