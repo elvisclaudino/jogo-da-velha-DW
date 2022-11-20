@@ -33,11 +33,11 @@
           <img src="../img/logo.png" alt="" class="logo img-fluid" />
         </div>
         <div class="container__profile">
-          <p class="name__user-profile">Usuário</p>
+          <p class="name__user-profile" id="username"></p>
 
           <div class="container__jogar-infos">
-            <p>Vitórias: 0</p>
-            <p>Derrotas: 0</p>
+            <p>Vitórias: <span id="wins"></span></p>
+            <p>Derrotas: <span id="defeats"></span></p>
           </div>
 
           <div class="container__jogar-buttons">
@@ -71,5 +71,19 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      axios.get(`http://localhost:3033/users/${localStorage.getItem('username')}`, {
+      })
+      .then(function (response) {
+          console.log(response);
+          const {wins,defeats} = response.data.data;
+          localStorage.setItem('wins', wins);
+          localStorage.setItem('defeats', defeats);
+          document.body.querySelector("#username").innerHTML = localStorage.getItem('username');
+          document.body.querySelector("#wins").innerHTML = localStorage.getItem('wins');
+          document.body.querySelector("#defeats").innerHTML = localStorage.getItem('defeats');
+      });
+    </script>
   </body>
 </html>
